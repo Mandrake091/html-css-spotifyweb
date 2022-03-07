@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+background-color: black;
+color: white;
+}
+
+/* COLORS */
+
+
+/* /COLORS */
+
+/* HEADER */
+
+/* /HEADER */
+
+/* GENERAL */
+.container-width{
+    margin: 0 auto;
+    width: 80vw;
+}
+.wrapper{
+    height: 100vh;
+    width: 100%;
+}
+.debug{
+    border: 1px solid rgb(255, 255, 255);
+}
+.flex{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* /GENERAL */
+
+/* MAIN */
+.wrapper-content{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: calc(100%  - 90px);
+}
+
+main{
+    width: calc(100% - 180px);
+    background-color: tomato;
+}
+.main-content{
+    overflow-y: auto;
+    height: 100%;
+    width: 100%;
+    padding-top: 90px;
+}
+
+
+/* /MAIN */
+
+/* HEADER */
+header{
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    background-color: blueviolet;
+}
+header ul li{
+    text-decoration: none;
+    padding-right: 10px;
+    list-style: none;
+    text-transform: uppercase;
+}
+header ul a{
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+    list-style: none;
+    text-transform: uppercase;
+}
+header ul{
+    align-self: center;
+}
+
+
+/* SECTION */
+.section1{
+    column-gap: 5px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding:0 20px;
+    width: 100%;
+    background-color: rgba(85, 53, 53, 0.645);
+
+}
+.section2{
+    margin:15px 0;
+   
+    width: 90%;
+    height: 30%;
+    background-color: rgba(85, 53, 53, 0.645);
+
+}
+.section3{
+    width: 90%;
+    height: 30%;
+    background-color: rgba(85, 53, 53, 0.645);
+
+}
+/* BOX */
+.box{   
+    align-self: center;
+    width: 200px;
+}
+.box img{
+    width: 100%;
+    
+    
+}
+
+
+
+/* /SECTION */
+
+
+
+/* NAV-TOP */
+.nav-top{
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    background-color: #28282872;
+}
+
+
+
+/* ASIDE */
+aside{
+    width: 180px;
+    background-color: brown;
+
+}
+
+/* /ASIDE */
+
+
+
+/* FOOTER */
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 90px;
+    width: 100%;
+    background-color: #282828;
+}
+
