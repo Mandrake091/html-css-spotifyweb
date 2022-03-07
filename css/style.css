@@ -52,7 +52,7 @@ main{
     overflow-y: auto;
     height: 100%;
     width: 100%;
-    padding-top: 90px;
+    padding-top: 60px;
 }
 
 
@@ -62,13 +62,12 @@ main{
 header{
     justify-content: center;
     width: 100%;
-    height: 30px;
-    background-color: blueviolet;
+    height: 50px;
+    
 }
 header ul li{
     margin: 0 15px;
     text-decoration: none;
-    
     list-style: none;
     text-transform: uppercase;
 }
@@ -150,7 +149,7 @@ header li:hover{
 .nav-top{
     text-align: right;
     width: 100%;
-    height: 80px;
+    height: 60px;
     position: fixed;
     top: 0;
     right:0;
@@ -165,30 +164,52 @@ header li:hover{
     margin-right: 30px;
     font-size: 1em;
     color: rgb(255, 255, 255);
-    line-height:90px;
+    line-height:60px;
     background-color: #0903035d;
 }
 /* ASIDE */
 aside{
     z-index: 100;
-    padding: 10px;
     width: 180px;
     background-color: brown;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+aside h3{
+    padding-left: 10px;
+    font-size: 1.5em;;
+}
 ul.menu.flex{
     flex-direction: column;
-    row-gap: 10px;
-    padding: 10px 0;
+    row-gap: 5px;
+    padding: 10px 0 20px 0 ;
+}
+aside ul li:hover{
+    border-left: 3px solid greenyellow;
+}
+aside ul li{
+    padding-left: 10px;
 }
 ul.playlist.flex{
-    padding-top: 10px;
+    align-items: center;
+    padding-top: 5px;
     row-gap: 10px;
 }
+ul.playlist.flex i{
+    padding-left: 10px;
+}
+ul.playlist.flex a:nth-child(2){
+    padding-left: 5px;
+    color: white;
+    text-decoration: none;
+}
+
 #logo{
     width: 70%;
+}
+#logo img{
+    padding: 10px;
 }
 .fa-house,.fa-magnifying-glass,.fa-book-open{
     color: white;
@@ -202,10 +223,28 @@ ul.playlist.flex{
     text-decoration: none;
     color: #d1d1d1;
 }
+.playlist>li{
+    list-style: none;
+}
 .menu>li a{
     padding-left: 5px;
     text-decoration: none;
+    list-style: none;
     color: #d1d1d1;
+}
+.menu>li{
+    list-style: none;
+}
+aside ul:last-child li{
+    list-style-type:none;
+  
+}
+aside ul:nth-child(2) li a{
+    color: white;
+    text-decoration: none;
+    padding-left: 5px;
+   
+  
 }
 
 
@@ -266,6 +305,7 @@ input{
 .fa-shuffle,.fa-backward-step,.fa-forward-step,.fa-forward-step,.fa-arrow-rotate-right{
     padding: 0 20px;
     font-size: 1.8em;
+    cursor:pointer;
 }
 .fa-play{
     font-size: 2.5em;
