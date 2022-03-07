@@ -4,8 +4,10 @@
     box-sizing: border-box;
 }
 body{
+font-family: 'Open Sans', sans-serif;
 background-color: black;
 color: white;
+font-size: 0.8em;
 }
 
 /* COLORS */
@@ -13,9 +15,6 @@ color: white;
 
 /* /COLORS */
 
-/* HEADER */
-
-/* /HEADER */
 
 /* GENERAL */
 .container-width{
@@ -47,6 +46,7 @@ color: white;
 main{
     width: calc(100% - 180px);
     background-color: tomato;
+    height: 100%;
 }
 .main-content{
     overflow-y: auto;
@@ -85,19 +85,22 @@ header ul{
 
 /* SECTION */
 .section1{
+    margin-bottom: 20px;
     column-gap: 5px;
     flex-flow: row nowrap;
     justify-content: space-between;
     padding:0 20px;
     width: 100%;
     background-color: rgba(85, 53, 53, 0.645);
-
 }
+
 .section2{
-    margin:15px 0;
-   
-    width: 90%;
-    height: 30%;
+    margin-bottom: 20px;
+    column-gap: 5px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding:0 20px;
+    width: 100%;
     background-color: rgba(85, 53, 53, 0.645);
 
 }
@@ -109,6 +112,7 @@ header ul{
 }
 /* BOX */
 .box{   
+    text-align: center;
     align-self: center;
     width: 200px;
 }
