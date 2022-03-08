@@ -256,6 +256,7 @@ ul.menu.flex{
     row-gap: 5px;
     padding: 10px 0 20px 0;
 }
+
 aside ul li:hover{
     font-size: 1.2em;
     transition: 0.2s;
@@ -266,7 +267,8 @@ aside ul li a:hover{
     color: white;
 }
 aside ul li{
-    color: #646464;
+    cursor: pointer;
+    color: #a3a3a3;
     padding-left: 10px;
 }
 
