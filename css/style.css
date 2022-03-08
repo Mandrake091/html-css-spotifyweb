@@ -94,7 +94,7 @@ header{
     height: 50px;    
 }
 header ul li{
-   
+
     position: relative;
     transition: 0.4s;
     margin: 0 10px;
@@ -136,12 +136,14 @@ li:hover > .border-bottom{
 
 /* Section1 */
 .section1{
+    z-index: 0;
     width: 100%;
     margin-bottom: 20px;
     column-gap: 20px;
     flex-flow: row nowrap;
     justify-content: space-between;
     padding:0 20px;
+    row-gap: 20px;
 }
 
 .section2{
@@ -168,6 +170,7 @@ li:hover > .border-bottom{
 
 /* BOX */
 .box{
+    
     text-align: center;
     width:200px;
 }
@@ -211,11 +214,13 @@ li:hover > .border-bottom{
     width: 100%;
     height: 60px;
     position: fixed;
+    z-index: 1;
     top: 0;
     right:0;
     background-color: #28282872;
 }
 .nav-top a{
+    z-index: 1000;
     border-radius: 20px;
     border: 1px solid white;
     padding:5px 20px;
@@ -302,6 +307,10 @@ aside ul li a:hover{
 #logo img{
     padding: 10px;
 }
+#logo img:nth-child(2){
+    display: none;
+}
+
 .fa-house,.fa-magnifying-glass,.fa-book-open{
     cursor: pointer;
     font-size: 1.6em;
@@ -544,8 +553,6 @@ div.bottom{
         cursor: pointer;
       }
 
-
-
 .fa-list:hover,
 .fa-tv:hover,
 .fa-volume-high:hover{
@@ -564,22 +571,71 @@ div.bottom{
     }
 
 .box{
-   
-       
         width:150px;
     }
-
-
   }
+  @media screen and (max-width: 768px) {
+   
+    div.nav-center{
+       font-size: 0.7em;
+    }
+}
 
- 
-
-  
-
-  
-
-
-
-
-
-
+    div.nav-left{    
+        column-gap: 20px;             
+    }
+    @media screen and (max-width: 576px) {
+   
+        div.nav-center{
+           font-size: 0.45em;
+        }
+        main{
+            width:calc(100% - 50px);
+        }
+       
+        div.player-bar.flex img{
+            width:30px;
+        }
+        div.nav-right{
+            font-size: 0.8em;
+        }
+       
+        div.nav-left{   
+            font-size: 0.9em; 
+            column-gap: 5px;             
+        }
+        aside{
+            align-items: center;
+            width: 50px;
+        }    
+        .wrapper-content{
+            justify-content: flex-start;
+        }
+        aside a,span,.line,.playlist,h3{
+            display: none;
+        }
+        aside ul li{
+            padding: 0;
+        }
+        ul.menu.flex{
+            align-items: center;
+        }
+        aside ul:last-child li{
+            text-align: center;
+        }
+        #logo img:nth-child(1){
+            display: none;
+            
+        }
+        #logo img:nth-child(2){
+            margin: 10px auto;
+            display: flex;
+            padding:0;
+            align-self: center;
+            justify-self: center;
+            width:30px;
+        }
+        .volume,.slider{
+            height: 2px;
+        }
+    }
