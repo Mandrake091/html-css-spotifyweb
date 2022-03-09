@@ -57,7 +57,7 @@ main{
 }
 div.main-content h1{
     padding:20px 0 30px 20px;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 
@@ -71,7 +71,6 @@ div.main-content h1{
     transition: 0.3s;
     font-size: 2em;
     font-weight: 800;
-    padding-top: 10px;
     text-align: left;
 }
 
@@ -482,12 +481,25 @@ div.player-bar.flex img:hover{
     width: 90px;
 }
 div.nav-left{     
-    column-gap: 40px;
+    column-gap: 10px;
     flex-basis: 25%;
     display: flex;
     flex-direction: row wrap;
     justify-content: flex-start;
     align-items: center;
+}
+div.nav-left div.flex{
+    flex-basis: 100%;
+    flex-direction: column;
+}
+div.nav-left div.flex h4{
+    font-size: 1.2em;
+    flex-direction: column;
+}
+div.nav-left div.flex p{
+    font-size: 0.9em;
+    color: #767676;
+
 }
 /* /NAV-LEFT */
 
@@ -669,39 +681,63 @@ div.bottom{
     }
     .section1 h4 {
         width: 50%;
-       
         z-index: 1000;
         font-size: 2.5em;
     }
   }
   @media screen and (max-width: 768px) {
+    div.nav-left div.flex{
+        flex-basis: 100%;
+        flex-direction: column;
+    }
+    div.nav-left div.flex h4{
+        font-size: 1em;
+        flex-direction: column;
+    }
+    div.nav-left div.flex p{
+        font-size: 0.8em;
+        color: #767676;
+    }
+    div.nav-left div:nth-child(3),
+    div.nav-right div.icons{
+        display: none;
+    }
    
     div.nav-center{
+        flex-basis: 40%;
        font-size: 0.7em;
     }
+
     .section1 h4 {
         width: 50%;
         position: absolute;
         z-index: 1000;
-        font-size: 2em;
+        font-size: 1.5em;
     }
     .section1 h4:hover{
-        font-size: 2.3em;
+        font-size: 1.8em;
         text-decoration:3px line-through black;
+    }
+    
+    .horizontal img {
+        filter: drop-shadow(0px 0px 5px #00000067);
+        position: fixed;
+        right: -51px;
+        bottom: -74px;
+        height: 80px;
+        width: 80px;
     }
 
     .box.horizontal {
         position: relative;
-        width: 200px;
-        height: 150px;
+        width: 225px;
+        height: 100px;
     }
     .horizontal img{
         z-index: 0;
     }
-
-
-
     div.nav-left{    
+        flex-basis: 30%;
         column-gap: 20px;             
     }
     div.icons{
@@ -714,7 +750,24 @@ div.bottom{
 
     }
     @media screen and (max-width: 576px) {
-   
+        .box.horizontal{
+            position: relative;
+            width:500px;
+            height: 100px;
+        }
+        .horizontal img {
+            filter: drop-shadow(0px 0px 5px #00000067);
+            position: fixed;
+            right: -18px;
+            bottom: -40px;
+            height: 100px;
+            width: 100px;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+        }
+     
         div.nav-center{
            font-size: 0.45em;
         }
@@ -767,4 +820,5 @@ div.bottom{
         .volume,.slider{
             height: 2px;
         }
+        
     }
