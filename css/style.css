@@ -176,6 +176,7 @@ li:hover > .border-bottom{
     width:200px;
 }
 div.box{
+    transition: 0.3s;
     background-color: #00000062;
     padding:10px 10px 10px;
     border-radius: 5px;
@@ -410,6 +411,7 @@ footer{
     background-color: #282828;
 }
 
+
 /* NAV-LEFT */
 div.player-bar.flex{
     cursor: pointer;
@@ -486,7 +488,6 @@ div.bottom{
     align-items: center;
     width: 100%;
 }
-
 
 .slider {
 -webkit-appearance: none;
