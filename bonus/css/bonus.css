@@ -55,18 +55,11 @@ main{
     padding-top: 60px;
     
 }
-div.main-content h1:first-child{
+div.main-content h1{
     padding:20px 0 30px 20px;
     font-size: 2.5em;
 }
-.main-content h1:nth-child(7){
-    padding:20px 0 0 20px;
-    font-size: 2.5em;
-}
-.main-content h1:nth-child(4){
-    padding:20px 0 0 20px;
-    font-size: 2.5em;
-}
+
 
 .main-content>p{
     font-weight: 600;
@@ -75,13 +68,11 @@ div.main-content h1:first-child{
     font-size: 1.1em;
 }
 .main-content h4{
-    font-size: 1.4em;
+    transition: 0.3s;
+    font-size: 2em;
+    font-weight: 800;
     padding-top: 10px;
-    padding-bottom: 10px;
-}
-.box p{
-    color:#a3a3a3;
-    font-weight: 600;
+    text-align: left;
 }
 
 
@@ -133,6 +124,17 @@ li:hover > .border-bottom{
 
 
 /* SECTION */
+.section1 h4{
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    font-size: 3em;
+}
+.section1 h4:hover{
+    font-size: 3.5em;
+    text-decoration:3px line-through black;
+}
+
 
 /* Section1 */
 .section1{
@@ -148,8 +150,9 @@ li:hover > .border-bottom{
 
 .section2{
     margin-bottom: 20px;
+    row-gap: 20px;
     column-gap: 20px;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: flex-start;
     padding:0 20px;
     width: 100%;
@@ -172,35 +175,79 @@ li:hover > .border-bottom{
 
 .box.horizontal{
     position: relative;
-    overflow: hidden;
-    text-align: center;
-    width:300px;
+    width:500px;
     height: 200px;
-    background-color: #04AA6D;
 }
+/* COLORS BOX */
+.red{
+    background-color: #e61e32;
+}
+.purple{
+    background: #8d67ab;
+}
+.fucsia{
+    background-color: #dc148c;
+}
+.green{
+    background-color: #608108;
+}
+.mint-green{
+    background-color: #27856a;
+}
+.blue{
+    background-color: #1e3264;
+}
+.orange{
+    background-color:#ba5d07 ;
+}
+
+
 .box{
     text-align: center;
     width:200px;
+    height: 200px;
+}
+
+.box:hover{
+    cursor: pointer;
+    filter: brightness(120%);
+   
 }
 div.box{
-    background-color: #00000062;
+    overflow: hidden;
     padding:10px 10px 10px;
     border-radius: 5px;
 }
-div.box:hover{
+.section2 .box img {
+    filter: drop-shadow(0px 0px 5px #00000067);
+    
+    position: fixed;
+    right: -79px;
+    bottom: -155px;
+    height: 100px;
+    width: 100px;
+}
+
+div.image:hover{
     cursor: pointer;
-    background-color: #3737372c;
+    filter: brightness(120%);
 }
 .horizontal img {
+    filter: drop-shadow(0px 0px 5px #00000067);
     position: fixed;
-    right: -76px;
-    bottom: -134px;
+    right: -74px;
+    bottom: -130px;
     height: 100px;
     width: 100px;
 }
 .image{
+    transition: 0.3s;
     transform: rotate(25deg);
-   
+}
+.section2 h4:hover{
+    cursor: pointer;
+    text-decoration:underline 2px black;
+    font-size: 2.3em;
 }
 
 .circle>i{
@@ -608,11 +655,23 @@ div.bottom{
   @media screen and (max-width: 1200px) {
 .section1 { 
     flex-flow: row wrap;
-    justify-content: flex-start;
+    }
+    .section1 h4:hover{
+        font-size: 2.8em;
+        text-decoration:3px line-through black;
     }
 
-.box{
-        width:150px;
+
+    .box.horizontal {
+        position: relative;
+        width: 250px;
+        height: 150px;
+    }
+    .section1 h4 {
+        width: 50%;
+       
+        z-index: 1000;
+        font-size: 2.5em;
     }
   }
   @media screen and (max-width: 768px) {
@@ -620,6 +679,26 @@ div.bottom{
     div.nav-center{
        font-size: 0.7em;
     }
+    .section1 h4 {
+        width: 50%;
+        position: absolute;
+        z-index: 1000;
+        font-size: 2em;
+    }
+    .section1 h4:hover{
+        font-size: 2.3em;
+        text-decoration:3px line-through black;
+    }
+
+    .box.horizontal {
+        position: relative;
+        width: 200px;
+        height: 150px;
+    }
+    .horizontal img{
+        z-index: 0;
+    }
+
 
 
     div.nav-left{    
