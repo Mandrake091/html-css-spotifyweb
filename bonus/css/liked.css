@@ -74,7 +74,7 @@ div.main-content h1{
     text-align: left;
 }
 .jumbo{
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     width: 100%;
     background-image: linear-gradient(to bottom right, #3d2b76, rgba(102, 101, 153, 0.056));
@@ -113,18 +113,17 @@ div.main-content h1{
 }
 .jumbo .flex span{
     font-size: 1.1em;
-   
     padding-left: 10px;
     padding-right: 5px;
 }
 
 .heart{
+    filter: drop-shadow(5px 5px 10px #00000082);
     margin:60px 0 30px 30px;
     justify-content: center;
     align-items: center;
     width:250px;
     height: 250px;
-    text-align: center;
     font-size: 7em;
     background-image: linear-gradient(to bottom right, rgb(76, 0, 255), rgb(255, 255, 255));
 }
@@ -190,6 +189,62 @@ li:hover > .border-bottom{
     color: black;
     cursor: pointer;
 }
+
+
+.grafica li{
+    display:inline-block;
+  }
+  
+  .grafica li span{
+    display:block;
+    width:2px;
+    -webkit-animation: grafic 400ms linear infinite alternate;
+  }
+  
+  
+  
+  @-webkit-keyframes grafic {
+    0%{height:2px;}
+  100%{height:20px;}
+  }
+  
+  li:nth-child(1) span{
+    background:#dedede;
+    -webkit-animation-delay:0.36s;
+  }
+  
+  li:nth-child(2) span{
+    background:#aaa8b8;
+    -webkit-animation-duration:1s;
+  }
+  
+  li:nth-child(3) span{
+    background:#dedede;
+    -webkit-animation-delay:0.8s;
+  }
+  
+  li:nth-child(4) span{
+    background:#aaa8b8;
+    -webkit-animation-delay:0.4s;
+  }
+  
+  li:nth-child(5) span{
+    background:#dedede;
+    -webkit-animation-duration:0.4s;
+  }
+  li:nth-child(6) span{
+    background:#dedede;
+    -webkit-animation-duration:0.9s;
+  }
+  li:nth-child(7) span{
+    background:#dedede;
+    -webkit-animation-duration:0.7s;
+  }
+  li:nth-child(8) span{
+    background:#dedede;
+    -webkit-animation-duration:0.8s;
+  }
+
 
 /* Section1 */
 .section1{
@@ -672,7 +727,6 @@ div.bottom{
     width: 100%;
 }
 
-
 .slider {
 -webkit-appearance: none;
   width: 60%;
@@ -839,38 +893,54 @@ div.bottom{
 
   /* MEDIA QUERY */
   @media screen and (max-width: 1200px) {
-      .connect{
-          display: none;
-      }
-.section1 { 
-    flex-flow: row wrap;
+    .heart{
+        filter: drop-shadow(5px 5px 10px #00000082);
+        margin:60px 0 30px 30px;
+        justify-content: center;
+        align-items: center;
+        width:200px;
+        height: 200px;
+        font-size: 7em;
+        background-image: linear-gradient(to bottom right, rgb(76, 0, 255), rgb(255, 255, 255));
     }
-    .section1 h4:hover{
-        font-size: 2.8em;
-        text-decoration:3px line-through black;
+    .title {
+        column-gap: 5px;
+        align-items: center;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-basis: 33%;
     }
+    .section2{
+        font-size: 0.9em;
+    }
+    .jumbo h4{
+        font-size: 4em;
+    }
+  
     .box.horizontal {
         position: relative;
         width: 250px;
         height: 150px;
     }
-    .section1 h4 {
-        width: 50%;
-        z-index: 1000;
-        font-size: 2.5em;
-    }
+  
   }
   @media screen and (max-width: 768px) {
-   
+    .jumbo h4{
+        display: none;
+    }
+    .section3 {
+        font-size: 0.8em;
+        padding: 0 0;
+    }
     
     div.nav-left div.flex{
         flex-basis: 100%;
         flex-direction: column;
     }
     div.nav-left div.flex h4{
-        font-size: 1em;
-        flex-direction: column;
+        font-size: 0.8em;
     }
+
     div.nav-left div.flex p{
         font-size: 0.8em;
         color: #767676;
@@ -927,6 +997,9 @@ div.bottom{
 
     }
     @media screen and (max-width: 576px) {
+        .title-bar p:nth-child(2){
+            display: none;
+        }
         .box.horizontal{
             position: relative;
             width:500px;
