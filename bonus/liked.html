@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/liked.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+    <title>Spotify</title>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+</head>
+
+<body>
+    <!-- contenitore-esterno -->
+    <div class="wrapper">
+        
+        <!-- contenitore-contenuti -->
+
+        <div class="wrapper-content">
+           
+            <!-- aside -->
+            <aside>
+                <div id="logo">
+                    <img src="../img/logo.svg" alt="">
+                    <img src="../img/logo-small.svg" alt="">
+               
+                <ul class="menu flex">
+                    <li>
+                        <i class="fa-solid fa-house"></i>  
+                       <span><a href="../index.html">Home</a></span>
+                    </li>
+                   
+                    <li>
+                        <i class="fa-solid fa-magnifying-glass"></i> 
+                       <span><a href="./bonus/search.html">Cerca</a></span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-book-open"></i>
+                       <span>La tua libreria</span>
+                    </li>
+                </ul>
+
+                <h3>Playlist</h3>
+
+                <ul class="playlist flex">
+                    <i class="fa-solid fa-square-plus"></i>
+                    <a href="">Crea Playlist</a>
+                    <li><a href="">Nome Playlist</a></li>
+                    <li><a href="">Nome Playlist</a></li>
+                    <li><a href="">Nome Playlist</a></li>
+                    <li><a href="">Nome Playlist</a></li>
+                    <li><a href="">Nome Playlist</a></li>
+                    <li><a href="">Nome Playlist</a></li>
+                </ul>
+                </div>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-circle-arrow-down"></i>
+                        <a href=""> Installa app</a>
+                    </li>
+                    <div class="line"></div>
+                    
+                    <li class="flex">
+                        <img src="../img/profile.svg" alt="">
+
+                        <span>John Doe</span>
+                    </li>
+                </ul>
+            </aside>
+            <!-- main con section -->
+            <main>
+                <!-- nav bar superiore -->
+               
+                <!-- contenuto principale -->
+                <div class="main-content">
+                    <div class="jumbo flex">
+                        <div class="heart flex">
+                        <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div>
+                        <p>playlist</p>
+                        <h4>Brani che ti piacciono</h4>
+                        <div class="flex">
+                        <img src="../img/profile.svg" alt="">
+                        <strong>Paolo Cannistraro</strong> • <span>62 brani</span>
+                        
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <section class="section1 flex">
+                        <div class="pause">
+                        <i class="fa-solid fa-pause"></i>
+                        </div>
+                    </section>
+
+
+                    <!-- Section2 -->
+                   
+
+                    <section class="section2">
+                        
+                        <div class="title-bar flex">
+                           <p># titolo</p>
+                           <p>album</p>
+                           <p>aggiunto il</p>
+                           <p><i class="fa-regular fa-clock"></i></p>
+                        </div>
+
+                        <div class="hr"></div>
+                    </section>
+
+                    <section class="section3 flex">
+
+                       
+
+                            <div class="flex">
+                            <div>
+
+                            
+                            <p>1</p>
+                            <img src="./img/basement.jpg" alt="">
+                            </div>
+                            
+                            <div>
+                                <h4>Cocaine Model</h4>
+                                <p>ZHU</p>
+                            </div>
+
+                            <div>
+                                <span>THE NIGHTDAY</span>
+                            </div>
+
+                            <div>
+                                <p>1 giorno fa</p>
+                            </div>
+
+                            <div>
+                                <p>
+                                    <i class="fa-solid fa-heart"></i>
+                                    4:15
+                                </p>
+                            </div>
+                        </div>
+
+
+
+
+                    </section>
+                   
+
+                
+                   
+             
+
+                </div>
+
+            </main>
+
+        </div>
+<!-- Footer -->
+        <footer>
+            
+            <div class="player-bar flex">
+                <div class="nav-left">
+                    <img src="./img/basement.jpg" alt="">
+                    <div class="flex">
+                    <h4>Never Say Never - Extended Mix</h4>
+                    <p>Basement Jaxx</p>
+                    </div>
+                    <div>
+                    <i class="fa-solid fa-heart"></i>
+                    <br>
+                    <i class="fa-solid fa-folder"></i>
+                    </div>
+                </div>
+
+                <div class="nav-center">
+                    <div class="top">
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <i class="fa-solid fa-play"></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                    </div>
+                    <div class="bottom">
+                        0:25
+                        <input type="range" class="slider" value="20">4:35
+                    </div>
+
+
+                </div>
+          
+                <div class="nav-right">
+                    <div class="icons">
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-tv"></i>
+                    </div>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <input type="range" class="volume" value="80">
+                </div>
+               
+
+
+            </div>
+           
+        </footer>
+       
+<!-- / Footer -->
+      </div>
+</body>
+</html>

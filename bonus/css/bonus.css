@@ -329,7 +329,7 @@ ul.menu.flex{
 aside ul li:hover{
     font-size: 1.1em;
     transition: 0.2s;
-    border-left: 3px solid greenyellow;
+    border-left: 3px solid #04AA6D;
 }
 
 aside ul li a:hover{
@@ -465,6 +465,7 @@ footer{
     background-color: #282828;
 }
 
+
 /* NAV-LEFT */
 div.player-bar.flex{
     cursor: pointer;
@@ -538,7 +539,7 @@ input{
 }
 .fa-shuffle:hover,.fa-backward-step:hover,.fa-forward-step:hover,.fa-forward-step:hover,.fa-arrow-rotate-right:hover{
     font-size: 2.5em;
-    color: greenyellow;
+    color: #04AA6D;
 }
 
 .fa-play{
@@ -547,7 +548,7 @@ input{
     font-size: 2.5em;
 }
 .top .fa-play:hover{
-    color: greenyellow;
+    color: #04AA6D;
     font-size: 3em;
 }
 div.bottom{
@@ -584,7 +585,7 @@ div.bottom{
     width: 25px;
     height: 8px;
     border-radius: 5px;
-    background: greenyellow;
+    background: #04AA6D;
     cursor: pointer;
   }
   
@@ -611,8 +612,8 @@ div.bottom{
     position: fixed;
     bottom: 72px;
     right: 210px;
-    bottom: 81px;
-}
+  }
+    
 
 .connect>div{
     column-gap: 20px;
@@ -688,7 +689,6 @@ div.bottom{
       }
       .volume::-moz-range-thumb {
         border-radius: 50%;
-        background: #b13030;
         color: #000000;
         cursor: pointer;
       }
@@ -702,7 +702,7 @@ div.bottom{
         width: 15px;
         height: 15px;
         border-radius: 50%;
-        background: greenyellow;
+        background: #04AA6D;
         cursor: pointer;
       }
       
@@ -735,8 +735,6 @@ div.bottom{
         font-size: 2.8em;
         text-decoration:3px line-through black;
     }
-
-
     .box.horizontal {
         position: relative;
         width: 250px;
@@ -749,6 +747,8 @@ div.bottom{
     }
   }
   @media screen and (max-width: 768px) {
+   
+    
     div.nav-left div.flex{
         flex-basis: 100%;
         flex-direction: column;
@@ -768,7 +768,7 @@ div.bottom{
    
     div.nav-center{
         flex-basis: 40%;
-       font-size: 0.7em;
+        font-size: 0.7em;
     }
 
     .section1 h4 {
@@ -827,8 +827,8 @@ div.bottom{
             width: 100px;
         }
         .box{
-            width: 150px;
-            height: 150px;
+            height: 186.5px;
+            width:calc(50% - 10px);
         }
      
         div.nav-center{
